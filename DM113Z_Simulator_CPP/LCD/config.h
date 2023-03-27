@@ -253,6 +253,7 @@ public:
 	};
 
 	class rev {
+	public:
 		const static inline int x[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int y[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int l[] = { 0,1,2,3,4,5,6,7 };
@@ -260,6 +261,7 @@ public:
 	};
 
 	class cho {
+	public:
 		const static inline int x[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int y[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int l[] = { 0,1,2,3,4,5,6,7 };
@@ -267,6 +269,7 @@ public:
 	};
 
 	class var {
+	public:
 		const static inline int x[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int y[] = { 3,3,3,3,3,3,3,3 };
 		const static inline int l[] = { 0,1,2,3,4,5,6,7 };
@@ -278,14 +281,14 @@ public:
 		class sign {
 		public:
 			enum sign_e {
-				vertical = 0,
-				horizontal = 1
+				vertical = 1,
+				horizontal = 0
 			};
 
 			const static inline int x[] = { 3,3 };
 			const static inline int y[] = { 2,2 };
 			const static inline int l[] = { 0,0 };
-			const static inline int b[] = { 8,4 };
+			const static inline int b[] = { 4,8 };
 
 		};
 

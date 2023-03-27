@@ -229,10 +229,14 @@ void DM113Z::set_segment(seg_e seg, uint8_t state)
 		_line->set(state);
 		break;
 	case SEG_CH_LEFT:
-		_ch->set(0, state);
+		for (int i = 0; i < 18; i++) {
+			_ch->set(i, state);
+		}
 		break;
 	case SEG_CH_RIGHT:
-		_ch->set(1, state);
+		for (int i = 18; i < 34; i++) {
+			_ch->set(i, state);
+		}
 		break;
 	case SEG_BANK_PGM_LEFT:
 		_bank_pgm->set(0, state);
